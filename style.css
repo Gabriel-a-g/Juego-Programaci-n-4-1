@@ -6,9 +6,9 @@
 
 canvas {
     /* creo el "espacio" en el que posterior mente voy a dibujar */
-    background: #11111b;
+    background: #efefff;
     display: block;
     margin: 0 auto;
-    border: solid #313244 3px;
+    border: solid #0717f8 3px;
     border-radius: 15px;
 }

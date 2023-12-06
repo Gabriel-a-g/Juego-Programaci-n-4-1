@@ -137,7 +137,7 @@ function collisionDetection() {
                     score++; //sumar un punto cada vez que se rompe un ladrillo
                     //Mostrar un mensaje de victoria cuando se hayan destruido todos los ladrillos
                     if (score == brickRowCount * brickColumnCount) {
-                        alert("YOU WIN, CONGRATULATIONS!");
+                        alert("HAS GANADO, FELICITACIONES!");
                         document.location.reload(); //vuelve a cargar la página y el juego empieza de nuevo, 
                     }
                 }
@@ -186,7 +186,7 @@ function draw() {
         } else {
             lives--;
             if (!lives) {
-                alert("GAME OVER");
+                alert("JUEGO TERMINADO.");
                 document.location.reload();
             }
             else {
@@ -210,4 +210,4 @@ function draw() {
     y += dy;
     requestAnimationFrame(draw); //requestAnimationFrame ayuda al navegador a refrescar la imagen 
 }
-draw();//Ahora draw() se ejecuta en bucle, pero al finalizar se pide un reinicio por parte del usuario, para evitar superposucion de alerts
+draw();//Ahora draw() se ejecuta en bucle, pero al finalizar se pide un reinicio por parte del usuario, para evitar superposucion de alerts 
